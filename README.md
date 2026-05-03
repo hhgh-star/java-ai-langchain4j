@@ -1,0 +1,1 @@
+本项目是医疗场景智能对话系统「硅谷小智（医疗版）」。后端为 Spring Boot 3，用 LangChain4j 对接阿里千问（流式回复），AiServices 挂接工具与 RAG；MongoDB 存多轮会话，MySQL + MyBatis-Plus 存预约挂号；Pinecone 作向量库，resources/documents 下 Markdown 作知识库。前端 xiaozhi-ui（Vue 3 + Vite + Element Plus）通过代理调用 /xiaozhi/chat，支持流式与 Markdown 展示。整体实现分导诊、号源查询与预约/取消等能力，并带 Knife4j 接口文档。
