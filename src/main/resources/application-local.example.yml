@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: java-ai-langchain4j
+  data:
+    mongodb:
+      uri: 你自己的连接地址
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 你自己的密码
+    url: 你自己的连接地址
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8081
+langchain4j:
+  community:
+    dashscope:
+      chat-model:
+        model-name: qwen-max
+        api-key: 你自己的api-key
+      embedding-model:
+        api-key: 你自己的api-key
+        model-name: text-embedding-v4
+      streaming-chat-model:
+        api-key: 你自己的api-key
+        model-name: qwen-max
+pinecone:
+  api-key: 你自己的向量数据库的api-key
+  index: 你自己创建的index名称
+  nameSpace: 你自己创建的namespace名称
