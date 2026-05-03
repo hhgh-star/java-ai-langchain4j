@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: java-ai-langchain4j
+  profiles:
+    active: local
+server:
+  port: 8081
